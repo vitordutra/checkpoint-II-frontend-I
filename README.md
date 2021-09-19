@@ -4,4 +4,4 @@ Site que conta um pouco da história e curiosidades da minha cidade: São Luís 
 
 Foi feito para mostrar conhecimentos de HTML e CSS vistos até o momento no Certified Web Developers da Digital House.
 
-Feito a base de ☕ por João Vitor Dutra
+Feito a base de ☕ por Denny Ribeiro, João Vitor Dutra e Thyano Correia
