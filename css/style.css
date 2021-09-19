@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #291517;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('../img/são luis.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+footer h3 {
+  color: #291517;
+  font-family: Roboto;
+}
+
+ul {
+  list-style: none;
+}
+
+.subtitle {
+  color: #291517;
+  font-size: 2rem;
+  font-family: Dancing Script, Arial, sans-serif;
+  text-align: center;
+}
+
+.white-overlay {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.title {
+  color: #291517;
+  font-size: 3rem;
+  font-family: Dancing Script, Arial, sans-serif;
+  text-align: center;
+}
+
+.history {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #f8e8dc;
+  font-size: 1.2rem;
+  font-family: 'Besley', serif;
+}
+
+.history span {
+  font-weight: bold;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+  font-size: 2rem;
+}
+.youtube {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.white-overlay-footer {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
