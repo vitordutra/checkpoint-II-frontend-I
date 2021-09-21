@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header div{
+    background-color: rgba(127, 255, 212, 0.151);
+    padding: 12px ;
+    text-align: center;
+}
+
+header div h1{
+    background-color: rgba(222, 184, 135, 0.658) ;
+    margin: 0px auto;
+    font-size: 41px;
+    padding: 8px 28px;
+    width: max-content;
+    border: none;
+    border-radius: 9px ;
+    font-family: besley;
+
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.719);
+}
+
+fieldset, legend{
+    border: solid purple ;
+    border-radius: 18px;
+    margin: 20px auto;
+    text-align: center;
+    width: 30%;
+}
+
+legend{
+    border: none;
+}
+
+input, label{
+    margin-bottom: 12px;
+    
+}
+
+label{
+    padding-right: 25px;
+}
+
+ 
+fieldset:hover{
+    scale: 1.1;
+}
+    
+button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+button:hover{
+    color: white;
+    background-color: violet;
+    font-weight: 700;
+    
+}
+
+#botoes{
+    text-align: center;
+}
+
+.anterior{
+    text-align: center;
+}
