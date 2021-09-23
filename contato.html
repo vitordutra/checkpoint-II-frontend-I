@@ -44,8 +44,8 @@
       </h1>
       <nav>
         <ul class="nav__links">
-          <li class="menu-item"><a href="#historia">História</a></li>
-          <li class="menu-item"><a href="#curiosidades">Curiosidades</a></li>
+          <li class="menu-item"><a href="index.html#historia">História</a></li>
+          <li class="menu-item"><a href="index.html#curiosidades">Curiosidades</a></li>
       </nav>
       <a class="cta" href="contato.html"
         ><button class="menu-item">Contato</button></a
@@ -58,50 +58,52 @@
       <form action="#" method="GET">
         <fieldset class="contatos">
           <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" placeholder="Meu nome..." />
+          <input type="text" name="nome" id="nome" placeholder="Fulano de Tal da Silva Sauro" required maxlength="100"/>
           <label for="email">Email</label>
           <input
             type="email"
             name="email"
             id="email"
             placeholder="exemplo@email.com"
+            required
           />
           <label for="contact">Telefone</label>
           <input
             type="tel"
             name="contact"
             id="contact"
-            placeholder="(xx) xxxxx-xxxx"
+            placeholder="(99) 99999-9999"
+            required
           />
           <label for="birthday">Data de nascimento</label>
-          <input type="date" name="birthday" id="birthday" />
+          <input type="date" name="birthday" id="birthday" required/>
         </fieldset>
       </form>
 
       <form action="#" method="GET">
-        <fieldset>
+        <fieldset class="option-text">
           <legend>Maior de idade</legend>
-          <input type="radio" name="idade" id="idade" class="idade" />
-          <label for="idade">Sim</label>
           <input type="radio" name="idade" id="idade" />
-          <label for="idade">Não</label>
+          <label for="idade" class="radio-text">Sim</label>
+          <input type="radio" name="idade" id="idade" />
+          <label for="idade" class="radio-text">Não</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="option-text">
           <legend>Ponto de interesse</legend>
-          <label for="1">Teste 1</label>
+          <label for="1" class="radio-text">Centro Histórico</label>
           <input type="radio" name="teste" id="1" />
-          <label for="2">Teste 2</label>
+          <label for="2" class="radio-text">Praia da Litorânea</label>
           <input type="radio" name="teste" id="2" />
-          <label for="3">Teste 3</label>
+          <label for="3" class="radio-text">Ponta do Espigão</label>
           <input type="radio" name="teste" id="3" />
         </fieldset>
-        <fieldset>
+        <fieldset class="option-text">
           <legend>Interesses na cidade</legend>
-          <label for="4">Teste 4</label>
+          <label for="4" class="checkbox-text">Turista</label>
           <input type="checkbox" name="" id="4" />
-          <label for="5">Teste 5</label>
+          <label for="5" class="checkbox-text">Residente</label>
           <input type="checkbox" name="" id="5" />
-          <label for="6">Teste 6</label>
+          <label for="6" class="checkbox-text">Estudante</label>
           <input type="checkbox" name="" id="6" />
         </fieldset>
         <div id="botoes">
@@ -109,7 +111,7 @@
           <button type="reset">Limpar</button>
         </div>
         <div class="anterior">
-          <a href="../checkpoint-II-frontend-I/index.html">
+          <a href="index.html">
             <button type="button">Voltar</button>
           </a>
         </div>
