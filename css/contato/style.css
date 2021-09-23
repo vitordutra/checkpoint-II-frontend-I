@@ -48,7 +48,8 @@ form label{
 }
 
 form input{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 0px auto;
 }
 
@@ -57,6 +58,8 @@ label, input{
     border-radius: 9px;
     padding: 1px;
 }
+
+
 .buttons{
     text-align: center;
     margin: 20px;
@@ -76,8 +79,9 @@ button:hover{
     
 }
 
-fieldset{
+.contatos{
     border: none;
+    animation: none;
 }
 
 legend{
@@ -85,5 +89,51 @@ legend{
     font-size: 22px; 
 }
 
+
+/*----------------------*/
+
+fieldset{
+    border: solid purple ;
+    border-radius: 18px;
+    margin: 20px auto;
+    text-align: center;
+    width: 30%;
+}
+
+legend{
+    border: none;
+}
+ 
+fieldset:hover{
+    scale: 1.1;
+    
+}
+
+.contatos:hover{
+    scale: 1.1;
+    width: 100%;
+}
+    
+button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+}
+
+button:hover{
+    color: white;
+    background-color: violet;
+    font-weight: 700;
+    
+}
+
+#botoes{
+    text-align: center;
+}
+
+.anterior{
+    text-align: center;
+}
 
 
