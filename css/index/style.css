@@ -37,6 +37,7 @@ button {
 button:hover {
   background-color: rgba(240, 121, 52, 0.8);
 }
+
 footer a {
   color: #291517;
 }
@@ -207,6 +208,12 @@ header div h1{
 
 }
 
+form {
+  font-family: Montserrat, sans-serif;
+  color: #291517;
+  font-weight: 500;
+}
+
 form label{
     text-align: center;
     display: flex;
@@ -217,6 +224,18 @@ form input{
     display: flex;
     flex-direction: column;
     margin: 0px auto;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    border: none;
+    border-bottom: 2px solid rgb(240, 121, 52);
+    outline: none;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+form input:focus{
+    border: none;
+    border-bottom: 3px solid rgba(240, 121, 52, 0.795);
 }
 
 label, input{
@@ -239,11 +258,11 @@ legend{
 /*----------------------*/
 
 fieldset{
-    border: solid purple ;
+    border: solid rgb(240, 121, 52) ;
     border-radius: 18px;
     margin: 20px auto;
     text-align: center;
-    width: 30%;
+    width: 75%;
 }
 
 legend{
@@ -257,10 +276,21 @@ fieldset:hover{
 
 .contatos:hover{
     scale: 1.1;
-    width: 100%;
 }
 
 .anterior{
     text-align: center;
 }
 
+#botoes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-container {
+  background-color: white;
+  margin: 5% 25%;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
