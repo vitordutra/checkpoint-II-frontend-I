@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&family=Montserrat:wght@400;500&family=Abril+Fatface&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
-  color: #291517;
+  color: white;
   text-decoration: none;
-  cursor: pointer;
+}
+
+footer a {
+  color: #291517;
 }
 
 body {
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url('../img/são luis.jpg');
+  background-image: url('../../img/saoluis.jpg');
   background-size: cover;
   background-blend-mode: overlay;
 }
@@ -78,16 +83,86 @@ ul {
   margin-top: 1rem;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .white-overlay-footer {
   width: 100%;
-  margin-top: 40px;
-  padding: 20px 0;
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-item {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+.saoluis:first-child {
+  color: rgb(36, 76, 138);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10% ;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  margin-top: 30px;
+}
+
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.nav__links li a:hover{
+  color: rgb(36, 76, 138);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(240, 121, 52);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: white;
+}
+
+footer h3 {
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: rgba(240, 121, 52, 0.8);
 }
