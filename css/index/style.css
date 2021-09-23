@@ -1,21 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&family=Montserrat:wght@400;500&family=Abril+Fatface&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
-  color: #291517;
+  color: white;
   text-decoration: none;
-  cursor: pointer;
 }
 
 body {
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url('../img/são luis.jpg');
+  background-image: url('../../img/saoluis.jpg');
   background-size: cover;
   background-blend-mode: overlay;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(240, 121, 52);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(240, 121, 52, 0.8);
+}
+footer a {
+  color: #291517;
 }
 
 footer h3 {
@@ -23,13 +42,105 @@ footer h3 {
   font-family: Roboto;
 }
 
+footer h3 {
+  margin-right: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  margin-top: 30px;
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10% ;
+}
+
 ul {
   list-style: none;
+}
+
+.history span {
+  font-weight: bold;
+}
+
+.history {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #f8e8dc;
+  font-size: 1.2rem;
+  font-family: 'Besley', serif;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+.menu-item {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav__links li a:hover{
+  color: rgb(36, 76, 138);
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+  font-size: 2rem;
+}
+.saoluis:first-child {
+  color: rgb(36, 76, 138);
 }
 
 .subtitle {
   color: #291517;
   font-size: 2rem;
+  font-family: Dancing Script, Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  color: #291517;
+  font-size: 3rem;
   font-family: Dancing Script, Arial, sans-serif;
   text-align: center;
 }
@@ -43,34 +154,11 @@ ul {
   background-color: rgba(255, 255, 255, 0.45);
 }
 
-.title {
-  color: #291517;
-  font-size: 3rem;
-  font-family: Dancing Script, Arial, sans-serif;
-  text-align: center;
+.white-overlay-footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.history {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  color: #f8e8dc;
-  font-size: 1.2rem;
-  font-family: 'Besley', serif;
-}
-
-.history span {
-  font-weight: bold;
-}
-
-.redes-sociais {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 10%;
-  font-size: 2rem;
-}
 .youtube {
   display: flex;
   justify-content: center;
@@ -78,16 +166,3 @@ ul {
   margin-top: 1rem;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.white-overlay-footer {
-  width: 100%;
-  margin-top: 40px;
-  padding: 20px 0;
-  background-color: rgba(255, 255, 255, 0.8);
-}
