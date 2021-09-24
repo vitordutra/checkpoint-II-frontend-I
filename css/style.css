@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:wght@500&family=Dancing+Script&family=Oswald:wght@500&family=Roboto:wght@500&family=Montserrat:wght@400;500&family=Abril+Fatface&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a {
+  color: #291517;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("../img/saoluis.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(240, 121, 52);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(240, 121, 52, 0.8);
+}
+
+footer a {
+  color: #291517;
+}
+
+footer h3 {
+  color: #291517;
+  font-family: Roboto;
+}
+
+footer h3 {
+  margin-right: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  margin-top: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+ul {
+  list-style: none;
+}
+
+.history span {
+  font-weight: bold;
+}
+
+.history {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #f8e8dc;
+  font-size: 1.2rem;
+  font-family: "Besley", serif;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.logo {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 500;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+.menu-item {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav__links li a:hover {
+  color: rgb(36, 76, 138);
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+  font-size: 2rem;
+}
+.saoluis:first-child {
+  color: rgb(36, 76, 138);
+}
+
+.subtitle {
+  color: #291517;
+  font-size: 2rem;
+  font-family: Dancing Script, Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  color: #291517;
+  font-size: 3rem;
+  font-family: Dancing Script, Arial, sans-serif;
+  text-align: center;
+}
+
+.white-overlay {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.white-overlay-footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.youtube {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header div {
+  background-color: rgba(127, 255, 212, 0.151);
+  padding: 12px;
+  text-align: center;
+}
+
+header div h1 {
+  background-color: rgba(222, 184, 135, 0.658);
+  margin: 0px auto;
+  font-size: 41px;
+  padding: 8px 28px;
+  width: max-content;
+  border: none;
+  border-radius: 9px;
+  font-family: besley;
+}
+
+.png {
+  background-image: url("https://st2.depositphotos.com/9438724/12317/v/380/depositphotos_123170006-stock-illustration-ornamental-pattern-seamless-vector-blue.jpg");
+  width: 100%;
+  height: 92px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+}
+
+form {
+  font-family: Montserrat, sans-serif;
+  color: #291517;
+  font-weight: 500;
+}
+
+form label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border: none;
+  border-bottom: 2px solid rgb(240, 121, 52);
+  outline: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+input:hover,
+.option-text:hover {
+  transform: scale(1.1);
+}
+
+form input:focus {
+  border: none;
+  border-bottom: 3px solid rgba(240, 121, 52, 0.795);
+}
+
+label,
+input {
+  margin: 10px;
+  border-radius: 9px;
+  padding: 1px;
+}
+
+.contatos {
+  border: none;
+  animation: none;
+}
+
+legend {
+  margin: 15px auto;
+  font-size: 22px;
+}
+
+fieldset {
+  border: solid rgb(240, 121, 52);
+  border-radius: 18px;
+  margin: 20px auto;
+  text-align: center;
+  width: 75%;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+legend {
+  border: none;
+}
+
+.anterior {
+  text-align: center;
+}
+
+#botoes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-container {
+  background-color: white;
+  margin: 5% 25%;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+.radio-text,
+.checkbox-text {
+  display: inline;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
