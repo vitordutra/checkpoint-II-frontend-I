@@ -1,83 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <script
+      src="https://kit.fontawesome.com/8ba80f8d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon/contato_favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato</title>
-  <link rel="stylesheet" href="./css/contato/style.css" />
-  <link rel="shortcut icon" href="./img/favicon/contato_favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-  <header>
-    <div>
-      <h1>Contato</h1>
-    </div>
-  </header>
-
-  <main>
-    <div class="png"></div>
-    <form action="#" method="GET">
-      <fieldset class="contatos">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Meu nome...">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="exemplo@email.com"/>
-        <label for="contact">Telefone</label>
-        <input type="tel" name="contact" id="contact" placeholder="(xx) xxxxx-xxxx" />
-        <label for="birthday">Data de nascimento</label>
-        <input type="date" name="birthday" id="birthday" />
-        
-      </fieldset>
-    </form>
+  <body>
     <header>
-      <div>
-          <h1>Informações</h1>
-      </div>
-  </header>
-  <form action="#" method="GET">
-      <fieldset>
-          <legend>Maior de idade</legend>
-          <input type="radio" name="idade" id="idade" class="idade">
-          <label for="idade">Sim</label>
-          <input type="radio" name="idade" id="idade">
-          <label for="idade">Não</label>
-      </fieldset>
-      <fieldset>
-          <legend>Ponto de interesse</legend>
-          <label for="1">Teste 1</label>
-          <input type="radio" name="teste" id="1">
-          <label for="2">Teste 2</label>
-          <input type="radio" name="teste" id="2">
-          <label for="3">Teste 3</label>
-          <input type="radio" name="teste" id="3">
-      </fieldset>
-      <fieldset>
-          <legend>Interesses na cidade</legend>
-          <label for="4">Teste 4</label>
-          <input type="checkbox" name="" id="4">
-          <label for="5">Teste 5</label>
-          <input type="checkbox" name="" id="5">
-          <label for="6">Teste 6</label>
-          <input type="checkbox" name="" id="6">
-      </fieldset>
-      <div id="botoes">
-          <button type="submit">
-              Enviar
-          </button>
-          <button type="reset">
-              Limpar
-          </button>
-      </div>
-      <div class="anterior">
-          <a href="../checkpoint-II-frontend-I/index.html" >
-              <button type="button">Voltar</button>
-          </a>
-      </div>
-  </form>
-  </main>
-</body>
+      <h1 class="logo">
+        <a href="/index.html"
+          ><span class="saoluis">S</span><span class="saoluis">ão Luis</span></a
+        >
+      </h1>
+      <nav>
+        <ul class="nav__links">
+          <li class="menu-item"><a href="index.html#historia">História</a></li>
+          <li class="menu-item"><a href="index.html#curiosidades">Curiosidades</a></li>
+      </nav>
+      <a class="cta" href="contato.html"
+        ><button class="menu-item">Contato</button></a
+      >
+    </header>
 
+    <main>
+      <div class="form-container">
+        <div class="png"></div>
+        <h2 class="title">Formulário de Cadastro</h2>
+      <form action="#" method="GET">
+        <fieldset class="contatos">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Fulano de Tal da Silva Sauro" required maxlength="100"/>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="exemplo@email.com"
+            required
+          />
+          <label for="contact">Telefone</label>
+          <input
+            type="tel"
+            name="contact"
+            id="contact"
+            placeholder="(99) 99999-9999"
+            required
+          />
+          <label for="birthday">Data de nascimento</label>
+          <input type="date" name="birthday" id="birthday" required/>
+        </fieldset>
+      </form>
+
+      <form action="#" method="GET">
+        <fieldset class="option-text">
+          <legend>Maior de idade</legend>
+          <input type="radio" name="idade" id="idade" />
+          <label for="idade" class="radio-text">Sim</label>
+          <input type="radio" name="idade" id="idade" />
+          <label for="idade" class="radio-text">Não</label>
+        </fieldset>
+        <fieldset class="option-text">
+          <legend>Ponto de interesse</legend>
+          <label for="1" class="radio-text">Centro Histórico</label>
+          <input type="radio" name="teste" id="1" />
+          <label for="2" class="radio-text">Praia da Litorânea</label>
+          <input type="radio" name="teste" id="2" />
+          <label for="3" class="radio-text">Ponta do Espigão</label>
+          <input type="radio" name="teste" id="3" />
+        </fieldset>
+        <fieldset class="option-text">
+          <legend>Interesses na cidade</legend>
+          <label for="4" class="checkbox-text">Turista</label>
+          <input type="checkbox" name="" id="4" />
+          <label for="5" class="checkbox-text">Residente</label>
+          <input type="checkbox" name="" id="5" />
+          <label for="6" class="checkbox-text">Estudante</label>
+          <input type="checkbox" name="" id="6" />
+        </fieldset>
+        <div id="botoes">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+        <div class="anterior">
+          <a href="index.html">
+            <button type="button">Voltar</button>
+          </a>
+        </div>
+      </form>
+      </div>
+
+
+    </main>
+
+    <footer class="white-overlay-footer">
+      <h3>Conheça nossas redes sociais</h3>
+      <div class="redes-sociais">
+        <a
+          href="https://www.instagram.com/prefeiturasaoluis/?hl=pt-br"
+          target="_blank"
+        >
+          <i class="flex fab fa-instagram"> </i>
+        </a>
+        <a href="https://www.youtube.com/c/TVPrefeituraSL" target="_blank">
+          <i class="flex fab fa-youtube"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
